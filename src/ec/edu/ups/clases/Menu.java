@@ -1,16 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.ups.clases;
 
 /**
- *
- * @author PCX
+ * Menu
+ * 
+ * clase que permite saber informacion del menu
+ * 
+ * @version 1.0
+ * @since 2019
+ * @author Byron Godoy
+ * @see http://ups.edu.ec
  */
+
 public class Menu 
 {
+
+    @Override
+    public String toString() 
+    {
+        return "Menu{" + "nombreSeccion=" + nombreSeccion + ", nombreComida=" + nombreComida + ", costoComida=" + costoComida + '}';
+    }
+    
+    
     private String nombreSeccion;
     private String nombreComida;
     private double costoComida;
@@ -33,16 +43,16 @@ public class Menu
     
     public String getnombreSeccion()
     {
-        return this.nombreSeccion; 
+        return nombreSeccion; 
     }
     
     public String getnombreComida()
     {
-        return this.nombreComida; 
+        return nombreComida; 
     }
     
     public double getcostoComida()
     {
-        return this.costoComida;
+        return costoComida;
     } 
 }
